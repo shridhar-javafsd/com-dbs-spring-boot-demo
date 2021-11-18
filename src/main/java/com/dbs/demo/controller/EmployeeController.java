@@ -53,10 +53,21 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(empService.addEmployee(employee), headers, HttpStatus.CREATED);
 	}
 
-	// two pathvariables and a RequestBody
+//	// two pathvariables and a RequestBody
+//	public Object someMethod() {
+//		return null;
+//	}
 
-	public Object someMethod() {
-		return null;
+	@PostMapping("/addemptodept/{dept}/{eid}")
+	public ResponseEntity<Employee> addEmpToDept(@PathVariable(name = "dept") String dept,
+			@PathVariable(name = "eid") int eid, @RequestBody Employee employee) {
+		LOG.info("addEmp");
+		employee.setEid(eid);
+		LOG.info(employee.toString());
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee added successully.");
+		headers.add("Department", dept);
+		return new ResponseEntity<Employee>(empService.addEmployee(employee), headers, HttpStatus.CREATED);
 	}
 
 }
