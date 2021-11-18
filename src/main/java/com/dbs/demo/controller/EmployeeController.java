@@ -22,9 +22,12 @@ public class EmployeeController {
 
 //	http://localhost:8082/emp/getemp/101
 	@GetMapping("/getemp/{eid}")
-	public Employee getEmpById(@PathVariable int eid) {
+	public Employee getEmpById(@PathVariable(name = "eid") int eid) {
 		LOG.info("getEmp");
 		return empService.getEmployeeById(eid);
 	}
+
+//	@GetMapping("/getemp/{did}/{eid}")
+//	public Employee getEmpById(@PathVariable(name = "eid") int eid, @PathVariable(name = "did") int did) {
 
 }
