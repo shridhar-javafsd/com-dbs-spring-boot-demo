@@ -3,6 +3,9 @@ package com.dbs.demo.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,11 +35,22 @@ public class EmployeeController {
 //	@GetMapping("/getemp/{did}/{eid}")
 //	public Employee getEmpById(@PathVariable(name = "eid") int eid, @PathVariable(name = "did") int did) {
 
+////	http://localhost:8082/emp/addemp 
+//	@PostMapping("/addemp")
+//	public Employee addEmp(@RequestBody Employee employee) {
+//		LOG.info("addEmp");
+//		LOG.info(employee.toString());
+//		return empService.addEmployee(employee);
+//	}
+
 //	http://localhost:8082/emp/addemp 
 	@PostMapping("/addemp")
-	public Employee addEmp(@RequestBody Employee employee) {
+	public ResponseEntity<Employee> addEmp(@RequestBody Employee employee) {
 		LOG.info("addEmp");
-		return empService.addEmployee(employee);
+		LOG.info(employee.toString());
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee added successully.");
+		return new ResponseEntity<Employee>(empService.addEmployee(employee), headers, HttpStatus.CREATED);
 	}
 
 }
