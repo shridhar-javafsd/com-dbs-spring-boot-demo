@@ -38,4 +38,21 @@ public class EmployeeService {
 		return empRepository.save(employee); // insert
 	}
 
+	public Employee updateEmployee(int eid, Employee employee) {
+		LOG.info("getEmployeeById");
+		Optional<Employee> employeeOptional = empRepository.findById(eid);
+		if (employeeOptional.isPresent())
+			return empRepository.save(employee);
+		throw new EmployeeNotFoundException("This employee does not exist.");
+	}
+
+	public Integer deleteEmployee(int eid) {
+		LOG.info("getEmployeeById");
+		Optional<Employee> employeeOptional = empRepository.findById(eid);
+		if (employeeOptional.isPresent()) {
+			empRepository.deleteById(eid);
+			return eid;
+		}
+		throw new EmployeeNotFoundException("This employee does not exist.");
+	}
 }
