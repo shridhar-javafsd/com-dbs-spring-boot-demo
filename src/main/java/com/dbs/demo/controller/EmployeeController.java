@@ -36,9 +36,11 @@ public class EmployeeController {
 
 	// http://localhost:8082/emp/getemp/101
 	@GetMapping("/getemp/{eid}")
-	public Employee getEmpById(@PathVariable(name = "eid") int eid) {
+	public ResponseEntity<Employee> getEmpById(@PathVariable(name = "eid") int eid) {
 		LOG.info("getEmp");
-		return empService.getEmployeeById(eid);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee is available.");
+		return new ResponseEntity<Employee>(empService.getEmployeeById(eid), headers, HttpStatus.OK);
 	}
 
 //	http://localhost:8082/emp/addemp 
