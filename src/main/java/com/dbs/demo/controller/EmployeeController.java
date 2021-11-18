@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,11 +20,10 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService empService;
 
-//	http://localhost:8082/emp/getemp
-	@GetMapping("/getemp")
-	public Employee getEmp() {
+//	http://localhost:8082/emp/getemp/101
+	@GetMapping("/getemp/{eid}")
+	public Employee getEmpById(@PathVariable int eid) {
 		LOG.info("getEmp");
-		int eid = 10;
 		return empService.getEmployeeById(eid);
 	}
 
