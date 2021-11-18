@@ -15,4 +15,9 @@ public class EmployeeService {
 		LOG.info("getEmployeeById");
 		return new Employee(eid, "Sonu", 56000);
 	}
+
+	public Employee addEmployee(Employee employee) {
+		LOG.info("addEmployee");
+		return employee;
+	}
 }
