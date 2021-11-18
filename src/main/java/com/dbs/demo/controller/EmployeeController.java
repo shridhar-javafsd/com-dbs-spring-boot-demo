@@ -1,5 +1,7 @@
 package com.dbs.demo.controller;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +29,7 @@ public class EmployeeController {
 
 //	http://localhost:8082/emp/getemp/101
 	@GetMapping("/getallemps")
-	public Employee getAllEmps() {
+	public List<Employee> getAllEmps() {
 		LOG.info("getAllEmps");
 		return empService.getAllEmployees();
 	}
