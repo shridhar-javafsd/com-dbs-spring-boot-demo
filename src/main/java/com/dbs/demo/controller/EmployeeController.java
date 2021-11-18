@@ -26,22 +26,18 @@ public class EmployeeController {
 	EmployeeService empService;
 
 //	http://localhost:8082/emp/getemp/101
+	@GetMapping("/getallemps")
+	public Employee getAllEmps() {
+		LOG.info("getAllEmps");
+		return empService.getAllEmployees();
+	}
+
+	// http://localhost:8082/emp/getemp/101
 	@GetMapping("/getemp/{eid}")
 	public Employee getEmpById(@PathVariable(name = "eid") int eid) {
 		LOG.info("getEmp");
 		return empService.getEmployeeById(eid);
 	}
-
-//	@GetMapping("/getemp/{did}/{eid}")
-//	public Employee getEmpById(@PathVariable(name = "eid") int eid, @PathVariable(name = "did") int did) {
-
-////	http://localhost:8082/emp/addemp 
-//	@PostMapping("/addemp")
-//	public Employee addEmp(@RequestBody Employee employee) {
-//		LOG.info("addEmp");
-//		LOG.info(employee.toString());
-//		return empService.addEmployee(employee);
-//	}
 
 //	http://localhost:8082/emp/addemp 
 	@PostMapping("/addemp")
@@ -50,23 +46,6 @@ public class EmployeeController {
 		LOG.info(employee.toString());
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("message", "Employee added successully.");
-		return new ResponseEntity<Employee>(empService.addEmployee(employee), headers, HttpStatus.CREATED);
-	}
-
-//	// two pathvariables and a RequestBody
-//	public Object someMethod() {
-//		return null;
-//	}
-
-	@PostMapping("/addemptodept/{dept}/{eid}")
-	public ResponseEntity<Employee> addEmpToDept(@PathVariable(name = "dept") String dept,
-			@PathVariable(name = "eid") int eid, @RequestBody Employee employee) {
-		LOG.info("addEmp");
-		employee.setEid(eid);
-		LOG.info(employee.toString());
-		HttpHeaders headers = new HttpHeaders();
-		headers.add("message", "Employee added successully.");
-		headers.add("Department", dept);
 		return new ResponseEntity<Employee>(empService.addEmployee(employee), headers, HttpStatus.CREATED);
 	}
 
