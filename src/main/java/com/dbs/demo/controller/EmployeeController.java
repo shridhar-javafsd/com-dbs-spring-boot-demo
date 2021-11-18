@@ -27,7 +27,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService empService;
 
-//	http://localhost:8082/emp/getemp/101
+//	http://localhost:8082/emp/getallemps
 	@GetMapping("/getallemps")
 	public List<Employee> getAllEmps() {
 		LOG.info("getAllEmps");
