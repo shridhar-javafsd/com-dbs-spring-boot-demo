@@ -3,6 +3,7 @@ package com.dbs.demo.model;
 import org.springframework.stereotype.Component;
 
 @Component
+//@Model
 public class Employee {
 
 	private int eid;
