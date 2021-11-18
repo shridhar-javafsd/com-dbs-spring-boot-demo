@@ -53,4 +53,10 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(empService.addEmployee(employee), headers, HttpStatus.CREATED);
 	}
 
+	// two pathvariables and a RequestBody
+
+	public Object someMethod() {
+		return null;
+	}
+
 }
