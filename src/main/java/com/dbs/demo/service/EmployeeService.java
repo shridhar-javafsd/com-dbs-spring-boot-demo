@@ -34,7 +34,7 @@ public class EmployeeService {
 	}
 
 	public List<Employee> getEmployeeByFirstName(String firstName) {
-		return null;
+		return empRepository.findByFirstName(firstName);
 	}
 
 	public Employee addEmployee(Employee employee) {
