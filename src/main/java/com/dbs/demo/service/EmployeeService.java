@@ -33,6 +33,10 @@ public class EmployeeService {
 		throw new EmployeeNotFoundException("This employee does not exist.");
 	}
 
+	public List<Employee> getEmployeeByFirstName(String firstName) {
+		return null;
+	}
+
 	public Employee addEmployee(Employee employee) {
 		LOG.info("addEmployee");
 		return empRepository.save(employee); // insert
@@ -55,4 +59,5 @@ public class EmployeeService {
 		}
 		throw new EmployeeNotFoundException("This employee does not exist.");
 	}
+
 }
