@@ -45,7 +45,16 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(empService.getEmployeeById(eid), headers, HttpStatus.OK);
 	}
 
-//	http://localhost:8082/emp/add-emp 
+	// http://localhost:8082/emp/get-emp-by-name/Sonu
+	@GetMapping("/get-emp-by-name/{firstname}")
+	public ResponseEntity<List<Employee>> getEmpByFirstName(@PathVariable(name = "firstname") String firstName) {
+		LOG.info("getEmpByFirstName");
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee is available.");
+		return new ResponseEntity<List<Employee>>(empService.getEmployeeByFirstName(firstName), headers, HttpStatus.OK);
+	}
+
+	// http://localhost:8082/emp/add-emp
 	@PostMapping("/add-emp")
 	public ResponseEntity<Employee> addEmp(@RequestBody Employee employee) {
 		LOG.info("addEmp");
