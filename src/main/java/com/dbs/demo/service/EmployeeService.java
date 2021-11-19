@@ -34,6 +34,7 @@ public class EmployeeService {
 	}
 
 	public List<Employee> getEmployeeByFirstName(String firstName) {
+		LOG.info("getEmployeeByFirstName");
 		return empRepository.findByFirstName(firstName);
 	}
 
