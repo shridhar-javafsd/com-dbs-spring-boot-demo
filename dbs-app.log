@@ -1,256 +1,90 @@
-2021-11-18 09:51:01.811  INFO 516 --- [main] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 516 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 09:51:01.822  INFO 516 --- [main] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 09:51:05.125  INFO 516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 09:51:05.155  INFO 516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 09:51:05.159  INFO 516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 09:51:05.167  INFO 516 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 09:51:05.168  INFO 516 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 09:51:05.169  INFO 516 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 09:51:05.170  INFO 516 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 09:51:05.188  INFO 516 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 09:51:05.411  INFO 516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 09:51:05.412  INFO 516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2983 ms
-2021-11-18 09:51:06.437  INFO 516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 09:51:06.468  INFO 516 --- [main] com.dbs.demo.App                         : Started App in 6.202 seconds (JVM running for 9.937)
-2021-11-18 09:51:11.790  INFO 516 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-18 09:51:11.792  INFO 516 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-11-18 09:51:11.799  INFO 516 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2021-11-18 09:51:11.870  INFO 516 --- [http-nio-8082-exec-1] com.dbs.demo.Hello                       : hello
-2021-11-18 09:51:16.553  INFO 516 --- [http-nio-8082-exec-2] c.d.demo.controller.EmployeeController   : getEmp
-2021-11-18 09:53:38.757  INFO 516 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-11-18 09:54:16.770  INFO 10692 --- [main] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 10692 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 09:54:16.777  INFO 10692 --- [main] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 09:54:20.831  INFO 10692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 09:54:20.872  INFO 10692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 09:54:20.873  INFO 10692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 09:54:20.892  INFO 10692 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 09:54:20.894  INFO 10692 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 09:54:20.895  INFO 10692 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 09:54:20.898  INFO 10692 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 09:54:20.910  INFO 10692 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 09:54:21.183  INFO 10692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 09:54:21.184  INFO 10692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4102 ms
-2021-11-18 09:54:22.438  INFO 10692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 09:54:22.491  INFO 10692 --- [main] com.dbs.demo.App                         : Started App in 7.563 seconds (JVM running for 11.599)
-2021-11-18 09:54:37.441  INFO 11240 --- [main] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 11240 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 09:54:37.455  INFO 11240 --- [main] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 09:54:42.199  INFO 11240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 09:54:42.231  INFO 11240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 09:54:42.233  INFO 11240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 09:54:42.239  INFO 11240 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 09:54:42.240  INFO 11240 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 09:54:42.241  INFO 11240 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 09:54:42.242  INFO 11240 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 09:54:42.258  INFO 11240 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 09:54:42.523  INFO 11240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 09:54:42.528  INFO 11240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4816 ms
-2021-11-18 09:54:43.503  WARN 11240 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8082 is already in use
-2021-11-18 09:54:43.513  INFO 11240 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2021-11-18 09:54:43.554  INFO 11240 --- [main] ConditionEvaluationReportLoggingListener : 
+2021-11-22 15:15:58.811  INFO 5600 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 5600 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
+2021-11-22 15:15:58.824  INFO 5600 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
+2021-11-22 15:16:00.460  INFO 5600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-22 15:16:00.508  INFO 5600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2021-11-22 15:16:00.905  INFO 5600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-11-22 15:16:00.907  INFO 5600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-22 15:16:00.907  INFO 5600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-22 15:16:00.908  INFO 5600 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-11-22 15:16:00.909  INFO 5600 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-11-22 15:16:00.910  INFO 5600 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2021-11-22 15:16:00.911  INFO 5600 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-11-22 15:16:00.911  INFO 5600 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-11-22 15:16:00.957  INFO 5600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-22 15:16:00.958  INFO 5600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2126 ms
+2021-11-22 15:16:01.244  INFO 5600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-22 15:16:01.260  INFO 5600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-11-22 15:16:01.266  INFO 5600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-11-22 15:16:01.267  INFO 5600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-11-22 15:16:01.711  INFO 5600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-22 15:16:01.712  INFO 5600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-22 15:16:02.168  WARN 5600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-22 15:16:02.415  INFO 5600 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-11-22 15:16:02.508  INFO 5600 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-11-22 15:16:02.676  INFO 5600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-22 15:16:02.974  INFO 5600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-11-22 15:16:02.977  INFO 5600 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-11-22 15:16:02.979  INFO 5600 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-11-22 15:16:02.996  INFO 5600 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-11-22 15:16:03.161  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-11-22 15:16:03.167  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-11-22 15:16:03.169  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-11-22 15:16:03.171  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-11-22 15:16:03.174  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-11-22 15:16:03.176  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-11-22 15:16:03.180  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-11-22 15:16:03.185  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-11-22 15:16:03.187  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-11-22 15:16:03.190  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-11-22 15:16:03.193  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-11-22 15:16:03.198  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-11-22 15:16:03.203  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-11-22 15:16:03.211  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-11-22 15:16:03.217  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-11-22 15:16:03.221  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-11-22 15:16:03.245  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-11-22 15:16:03.248  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-11-22 15:16:03.251  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-11-22 15:16:03.253  INFO 5600 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2021-11-22 15:16:03.281  INFO 5600 --- [restartedMain] com.dbs.demo.App                         : Started App in 4.613 seconds (JVM running for 403.874)
+2021-11-22 15:16:03.336  INFO 5600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-11-18 09:54:43.595 ERROR 11240 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-***************************
-APPLICATION FAILED TO START
-***************************
+==========================
+CONDITION EVALUATION DELTA
+==========================
 
-Description:
 
-Web server failed to start. Port 8082 was already in use.
+Positive matches:
+-----------------
 
-Action:
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name dbs-app.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
-Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
 
-2021-11-18 09:55:18.617  INFO 10692 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-11-18 10:00:08.590  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:00:08.593  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:00:08.832  INFO 6712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-11-18 10:00:08.834  INFO 6712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-11-18 10:00:12.600  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:00:12.628  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:00:12.629  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:00:12.639  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:00:12.641  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:00:12.646  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:00:12.647  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:00:12.658  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:00:12.881  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:00:12.887  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4049 ms
-2021-11-18 10:00:16.145  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:00:16.269  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:00:16.361  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 9.467 seconds (JVM running for 19.845)
-2021-11-18 10:00:32.358  INFO 6712 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-18 10:00:32.359  INFO 6712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-11-18 10:00:32.369  INFO 6712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2021-11-18 10:00:32.425  INFO 6712 --- [http-nio-8082-exec-1] c.d.demo.controller.EmployeeController   : getEmp
-2021-11-18 10:00:43.822  INFO 6712 --- [http-nio-8082-exec-2] com.dbs.demo.Hello                       : hello
-2021-11-18 10:10:16.397  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:10:16.398  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:10:17.487  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:10:17.492  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:10:17.494  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:10:17.495  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:10:17.496  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:10:17.497  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:10:17.497  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:10:17.498  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:10:17.601  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:10:17.616  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
-2021-11-18 10:10:18.101  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:10:18.159  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:10:18.200  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 3.193 seconds (JVM running for 621.683)
-2021-11-18 10:10:18.203  INFO 6712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-11-18 10:11:50.548  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:11:50.550  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:11:51.828  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:11:51.830  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:11:51.831  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:11:51.834  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:11:51.834  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:11:51.835  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:11:51.837  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:11:51.838  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:11:52.141  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:11:52.145  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1580 ms
-2021-11-18 10:11:52.633  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:11:52.651  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:11:52.658  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 2.226 seconds (JVM running for 716.142)
-2021-11-18 10:11:52.669  INFO 6712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-11-18 10:12:13.614  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:12:13.615  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:12:14.569  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:12:14.572  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:12:14.576  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:12:14.577  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:12:14.578  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:12:14.579  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:12:14.580  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:12:14.583  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:12:14.628  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:12:14.630  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
-2021-11-18 10:12:14.939  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:12:14.977  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:12:14.984  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 1.469 seconds (JVM running for 738.468)
-2021-11-18 10:12:14.990  INFO 6712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-11-18 10:12:45.187  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:12:45.192  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:12:45.796  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:12:45.799  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:12:45.801  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:12:45.804  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:12:45.805  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:12:45.808  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:12:45.809  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:12:45.809  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:12:45.844  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:12:45.845  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
-2021-11-18 10:12:46.190  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:12:46.217  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:12:46.225  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 1.162 seconds (JVM running for 769.708)
-2021-11-18 10:12:46.233  INFO 6712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-11-18 10:14:04.254  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:14:04.255  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:14:06.088  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:14:06.093  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:14:06.095  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:14:06.096  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:14:06.097  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:14:06.098  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:14:06.100  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:14:06.101  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:14:06.140  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:14:06.141  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1880 ms
-2021-11-18 10:14:07.020  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:14:07.043  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:14:07.050  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 2.959 seconds (JVM running for 850.533)
-2021-11-18 10:14:07.066  INFO 6712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-11-18 10:20:00.784  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:20:00.784  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:20:01.569  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:20:01.573  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:20:01.574  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:20:01.575  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:20:01.577  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:20:01.580  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:20:01.583  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:20:01.584  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:20:01.656  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:20:01.657  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 859 ms
-2021-11-18 10:20:01.886  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:20:01.907  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:20:01.913  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 1.229 seconds (JVM running for 1205.396)
-2021-11-18 10:20:01.916  INFO 6712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-11-18 10:20:23.911  INFO 6712 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-18 10:20:23.914  INFO 6712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-11-18 10:20:23.915  INFO 6712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-11-18 10:20:23.996 ERROR 6712 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'eid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+Negative matches:
+-----------------
 
-java.lang.IllegalStateException: Optional int parameter 'eid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:263) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.12.jar:5.3.12]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+    None
 
-2021-11-18 10:21:16.685  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Starting App using Java 11.0.2 on DESKTOP-KFP7J4E with PID 6712 (C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo\target\classes started by Vaman in C:\VamanCode\Eclipse_WS\com-dbs-spring-boot-demo)
-2021-11-18 10:21:16.687  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : No active profile set, falling back to default profiles: default
-2021-11-18 10:21:17.524  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-18 10:21:17.528  INFO 6712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-18 10:21:17.530  INFO 6712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-2021-11-18 10:21:17.532  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2021-11-18 10:21:17.538  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
-2021-11-18 10:21:17.539  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2021-11-18 10:21:17.540  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-11-18 10:21:17.543  INFO 6712 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-11-18 10:21:17.607  INFO 6712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-11-18 10:21:17.607  INFO 6712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 914 ms
-2021-11-18 10:21:17.858  INFO 6712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-18 10:21:17.883  INFO 6712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-11-18 10:21:17.892  INFO 6712 --- [restartedMain] com.dbs.demo.App                         : Started App in 1.333 seconds (JVM running for 1281.375)
-2021-11-18 10:21:17.897  INFO 6712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021-11-22 15:16:07.808  INFO 5600 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-22 15:16:07.810  INFO 5600 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-22 15:16:07.815  INFO 5600 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-11-22 15:16:27.336  INFO 5600 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-22 15:16:27.339  INFO 5600 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-11-22 15:16:27.389  INFO 5600 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
