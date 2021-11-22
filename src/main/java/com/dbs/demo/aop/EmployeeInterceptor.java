@@ -18,6 +18,15 @@ public class EmployeeInterceptor {
 
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
+//	@Before("com.dbs.demo.controller")
+//	public void someMethod(JoinPoint jp) {
+//
+//		String methodName = jp.getSignature().toString();
+//		String arguments = jp.getArgs().toString();
+//
+//		LOG.info(methodName + " " + arguments + " log for this method with these arguments was created");
+//	}
+
 	@Before("execution(* com.dbs.demo.controller.EmployeeController.*(..))")
 	public void beforeEmployeeControllerMethods(JoinPoint joinPoint) {
 

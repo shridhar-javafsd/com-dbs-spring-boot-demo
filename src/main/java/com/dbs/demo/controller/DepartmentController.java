@@ -24,7 +24,10 @@ public class DepartmentController {
 	@Autowired
 	private DepartmentService depService;
 
+	// side effect - 
+	
 	// http://localhost:8082/getalldeps
+	
 	@GetMapping("/getalldeps")
 	public List<Department> getAllDeps() {
 		LOG.info("Controller getAllDeps");
