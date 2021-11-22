@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +23,8 @@ import com.dbs.demo.service.EmployeeService;
 
 @RestController
 @RequestMapping("/emp")
+//@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:3000/")
 public class EmployeeController {
 
 	private static final Logger LOG = LoggerFactory.getLogger(EmployeeController.class);
@@ -29,6 +32,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService empService;
 
+//	@CrossOrigin(origins = "http://localhost:3000/")
 //	http://localhost:8082/emp/getallemps
 	@GetMapping("/getallemps")
 	public List<Employee> getAllEmps() {
@@ -36,6 +40,7 @@ public class EmployeeController {
 		return empService.getAllEmployees();
 	}
 
+//	@CrossOrigin(origins = "http://localhost:3003/")
 	// http://localhost:8082/emp/get-emp/101
 	@GetMapping("/get-emp/{eid}")
 	public ResponseEntity<Employee> getEmpById(@PathVariable(name = "eid") int eid) {
