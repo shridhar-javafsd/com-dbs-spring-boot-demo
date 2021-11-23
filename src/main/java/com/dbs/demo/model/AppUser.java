@@ -13,6 +13,7 @@ public class AppUser implements Serializable {
 
 	private String username;
 	private String password;
+	// ROLE role; // admin, user ... 
 
 	public AppUser() {
 		super();

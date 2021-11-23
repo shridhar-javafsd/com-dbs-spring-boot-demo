@@ -1,6 +1,7 @@
 package com.dbs.demo.security;
 
 import org.slf4j.Logger;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -39,8 +40,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		LOG.info("configure");
 		httpSecurity.csrf().disable().authorizeRequests().antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 //		.antMatchers("/*").permitAll()
-//		.antMatchers("/emp/getallemps")
-				.antMatchers("/hello").permitAll().antMatchers("/login").permitAll().anyRequest().authenticated().and()
+//			.antMatchers("/emp/getallemps").permitAll()
+				.antMatchers("/hello").permitAll().
+				antMatchers("/login").permitAll().
+				anyRequest().authenticated().and()
 				.exceptionHandling().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 	}
 }
