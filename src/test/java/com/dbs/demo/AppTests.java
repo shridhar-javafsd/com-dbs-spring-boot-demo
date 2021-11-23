@@ -27,8 +27,4 @@ class AppTests {
 		assertNotEquals(unexpected, actual);
 	}
 
-	// @Test
-//	void contextLoads() {
-//	}
-
 }
